@@ -19,4 +19,4 @@ $(document).ready(function(){
         console.log(obj)
         // console.log('this is locally stored', localStorage.getItem('test'))
     })
-    }
+    })
