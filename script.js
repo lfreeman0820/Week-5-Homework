@@ -1,7 +1,7 @@
 $(document).ready(function(){
     const date = new Date();
     const hour = date.getHours();
-    const obj = localStorage.getItem('todoObj') ? JSON.parse(localStorage.getItem('todoObj')) || {}
+    const obj = localStorage.getItem('todoObj') ? JSON.parse(localStorage.getItem('todoObj')) : {};
     $("#currentDay").text('4/20/2020')
     for(let i = 9; i < 18; i++){
     let hourTxt = i<12?`${i}AM`: i>12 ? `${i-12}PM` : '12PM';
