@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    const obj = JSON.parse(localStorage.getItem('todoObj'))
+    const obj = JSON.parse(localStorage.getItem('todoObj')) || {}
     $("#currentDay").text('4/20/2020')
     for(let i = 9; i < 18; i++){
         $(".container").append(`<div class="row time-block">
